@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script async src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="App.js"></script>
+   
+</head>
+<body>
+    <div class="first"><h1 ><strong>MY COUNTRY EXPLORER APP</strong></h1></div>
+    <div class="second"><input type="text" placeholder="Enter the country" id="input">
+     <button id="btn">Search</button> <button id="btn2">🔖</button> <button id="btn1">favourites</button></div>
+    <div id="details"></div>
+     <div id="timezoneList"></div>
+    <div id="map"></div>
+   
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup">&times;</span>
+        <div id="popupDetails"></div>
+    </div>
+</div>
+</body>
+</html>
