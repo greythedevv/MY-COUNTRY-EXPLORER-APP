@@ -59,7 +59,7 @@ input{
 /* Mobile responsiveness */
 @media (max-width: 600px){
 
-    .first,
+   
     .second{
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2 columns */
