@@ -157,7 +157,7 @@ function convertToIANA(utcString) {
         return `Etc/GMT${sign}${Math.abs(offset)}`; // IANA flips signs
     }
 
-    return "Etc/UTC"; // fallback
+    return "Etc/UTC"; // fallback.
 }
 
 function drawMap(latlang, name) {
