@@ -81,7 +81,7 @@ saveBtn.addEventListener("click", function() {
     }
 });
 
-
+// pop up for saved countries
 showSavedBtn.addEventListener("click", function() {
 
     let saved = localStorage.getItem("savedCountries");
@@ -90,7 +90,7 @@ showSavedBtn.addEventListener("click", function() {
         return;
     }
 
-    let countries = JSON.parse(saved);
+     let countries = JSON.parse(saved) || [];
 
     popupDetails.innerHTML = countries.map(country => `
         <div style="margin-bottom:15px;">
@@ -108,6 +108,14 @@ closePopup.addEventListener("click", function(){
     popup.style.display = "none"
 })
 
+popup.addEventListener("click", function (e) {
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+});
+
+
+// update time zone
 function updateTimezones(timezones) {
     const timezoneList = document.getElementById("timezoneList");
     timezoneList.innerHTML = "";
