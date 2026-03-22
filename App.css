@@ -69,7 +69,7 @@ input{
 
     input{
         grid-column: span 2; /* input takes full width */
-        width: 100%;
+        width: 95%;
     }
 
     #btn,
