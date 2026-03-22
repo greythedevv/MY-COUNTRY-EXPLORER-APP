@@ -61,17 +61,21 @@ input{
 
     .first,
     .second{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        gap: 10px;
+        align-items: center;
     }
 
     input{
-        width: 90%;
+        grid-column: span 2; /* input takes full width */
+        width: 100%;
     }
 
     #btn,
     #btn2,
     #btn1{
-        width: 90%;
+        width: 100%; /* buttons fill their grid space */
     }
 
     #map{
@@ -99,6 +103,9 @@ input{
     width:300px;
     text-align:center;
     z-index: 10000;
+     max-height: 80vh;       
+    overflow-y: auto;        
+    position: relative;
 }
 
 #closePopup{
