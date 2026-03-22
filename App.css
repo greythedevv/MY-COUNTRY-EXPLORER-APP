@@ -98,7 +98,7 @@ input{
     border-radius:10px;
     width:300px;
     text-align:center;
-    overflow-y: scroll;
+    z-index: 10000;
 }
 
 #closePopup{
@@ -130,3 +130,4 @@ input{
 
   z-index: 9999;  /* 🔥 key fix */
 }
+
